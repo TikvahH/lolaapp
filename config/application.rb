@@ -1,5 +1,15 @@
 require File.expand_path('../boot', __FILE__)
 
+module LolaApp
+  class Application < Rails::Application
+
+    config.generators do |g|
+      g.orm             :active_record
+      g.template_engine :erb
+    end
+
+
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
