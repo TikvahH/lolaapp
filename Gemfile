@@ -1,5 +1,16 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-generators', '~> 3.3.4'
+
+gem 'bcrypt', '~> 3.1.7'                # uncomment this line
+
+group :development, :test do
+  # Use pry with Rails console
+  gem 'pry-rails'
+
+  # Better Rails Error Pages
+  gem 'better_errors'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
